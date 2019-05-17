@@ -1,0 +1,59 @@
+{
+  "name": "@ticketswap/comets",
+  "version": "0.0.0-development",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "commit": "git-cz",
+    "start": "rollup -c --watch",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src",
+    "dev": "start-storybook -p 9001 -c .storybook",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md|mdx|graphql)\"",
+    "format": "npm run prettier -- --write",
+    "validate": "npm run test && npm run prettier -- --list-different",
+    "semantic-release": "semantic-release"
+  },
+  "repository": "https://github.com/TicketSwap/comets",
+  "main": "dist/comets.js",
+  "module": "dist/comets.es.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.9",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.2.2",
+    "prettier": "^1.17.1",
+    "react-testing-library": "^7.0.0",
+    "rollup": "^1.12.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-filesize": "^6.0.1",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-progress": "^1.1.1",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-visualizer": "^1.1.1",
+    "rollup-watch": "^4.3.1",
+    "semantic-release": "^15.13.12"
+  }
+}

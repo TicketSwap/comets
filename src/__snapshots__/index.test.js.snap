@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon matches snapshot 1`] = `
+<span
+  class="icon css-yj93w3-SvgWrapper elpsssu0"
+>
+  <svg
+    aria-label="Download"
+    class="css-1dx98cs-InlineSvg elpsssu1"
+    clip-rule="evenodd"
+    fill-rule="evenodd"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    stroke-linejoin="round"
+    stroke-miterlimit="1.414"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g>
+      <path
+        d="M14.586 18.416l-4-4A1.986 1.986 0 0 1 10 13.002c0-.534.208-1.037.586-1.414.378-.378.88-.586 1.414-.586.534 0 1.036.208 1.414.586l.586.586V5c0-1.103.898-2 2-2 1.103 0 2 .897 2 2v7.174l.586-.586c.378-.378.88-.586 1.414-.586.534 0 1.036.208 1.414.586.378.377.586.88.586 1.414 0 .534-.208 1.036-.586 1.414l-4 4a1.103 1.103 0 0 1-.175.142 1.938 1.938 0 0 1-.47.289 2.01 2.01 0 0 1-1.537 0 1.897 1.897 0 0 1-.464-.284l-.08-.045-.102-.102zM26 19a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-4a2 2 0 0 1 4 0v2h16v-2a2 2 0 0 1 2-2z"
+      />
+    </g>
+  </svg>
+</span>
+`;
