@@ -10,7 +10,7 @@ function loadStories() {
 }
 
 addDecorator(story => (
-  <div>
+  <div style={{ padding: 16 }}>
     <Global
       styles={css`
         *,
@@ -22,6 +22,10 @@ addDecorator(story => (
           margin: 0;
           padding: 0;
           border: 0;
+        }
+
+        .icon {
+          background-color: #eee;
         }
       `}
     />
