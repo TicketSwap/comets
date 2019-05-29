@@ -13,5 +13,10 @@ module.exports = {
     ],
     '@babel/preset-react',
   ],
-  plugins: ['emotion'],
+  plugins: [
+    'emotion',
+    '@babel/plugin-syntax-dynamic-import',
+    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-object-rest-spread',
+  ],
 }
