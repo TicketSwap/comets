@@ -48,7 +48,7 @@
     "jest": "^24.8.0",
     "jest-dom": "^3.2.2",
     "prettier": "^1.17.1",
-    "react-testing-library": "^7.0.0",
+    "@testing-library/react": "^8.0.1",
     "rollup": "^1.12.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-filesize": "^6.0.1",
