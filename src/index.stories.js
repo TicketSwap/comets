@@ -22,6 +22,7 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.Chat title="Chat" />
     <Icon.ChatAlt title="ChatAlt" />
     <Icon.Checkmark title="Checkmark" />
+    <Icon.CheckmarkRounded title="CheckmarkRounded" />
     <Icon.ChevronDown title="ChevronDown" />
     <Icon.ChevronDownAlt title="ChevronDownAlt" />
     <Icon.ChevronLeft title="ChevronLeft" />
