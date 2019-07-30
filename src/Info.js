@@ -3,6 +3,6 @@ import { Icon } from './Icon'
 
 export const Info = props => (
   <Icon a11yTitle="Info" {...props}>
-    <path d="M18 16a2 2 0 1 0-4 0v6a2 2 0 1 0 4 0v-6zm-2-8a2 2 0 1 0-.001 3.999A2 2 0 0 0 16 8zm0 22C8.28 30 2 23.72 2 16S8.28 2 16 2s14 6.28 14 14-6.28 14-14 14z" />
+    <path d="M18 23a2 2 0 11-4 0v-8a2 2 0 114 0v8zm-2-12a2 2 0 11-.001-3.999A2 2 0 0116 11z" />
   </Icon>
 )
