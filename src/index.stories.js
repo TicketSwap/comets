@@ -41,6 +41,7 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.CloseRounded title="CloseRounded" />
     <Icon.Comment title="Comment" />
     <Icon.CreditCard title="CreditCard" />
+    <Icon.Dot title="Dot" />
     <Icon.Dots title="Dots" />
     <Icon.Download title="Download" />
     <Icon.Entrance title="Entrance" />
