@@ -72,6 +72,7 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.MinusAlt title="MinusAlt" />
     <Icon.MinusRounded title="MinusRounded" />
     <Icon.MobilePhone title="MobilePhone" />
+    <Icon.Money title="Money" />
     <Icon.MusicalNote title="MusicalNote" />
     <Icon.Padlock title="Padlock" />
     <Icon.Paperclip title="Paperclip" />
