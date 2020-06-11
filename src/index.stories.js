@@ -94,6 +94,7 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.SellTicket title="SellTicket" />
     <Icon.Share title="Share" />
     <Icon.ShareAlt title="ShareAlt" />
+    <Icon.Shield title="Shield" />
     <Icon.SoundCloud title="SoundCloud" />
     <Icon.Spinner title="Spinner" />
     <Icon.Spotify title="Spotify" />
