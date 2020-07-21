@@ -1,7 +1,17 @@
 # ☄️ Comets
 
-A set of icons used throughout the TicketSwap product.
+A set of React.js icons used throughout the TicketSwap product. Powered by [Emotion](https://emotion.sh/docs/introduction).
 
 ## Install
 
-`npm i @ticketswap/comets` or `yarn add @ticketswap/comets`
+Using npm
+
+```bash
+npm i @ticketswap/comets @emotion/core @emotion/styled
+```
+
+Using yarn
+
+```bash
+yarn add @ticketswap/comets @emotion/core @emotion/styled
+```
