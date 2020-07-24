@@ -9,7 +9,7 @@ const SvgWrapper = styled.span`
   min-width: ${props => `${props.iconSize || 32}px`};
   min-height: ${props => `${props.iconSize || 32}px`};
   position: relative;
-  color: inherit;
+  color: ${props => props.color} !important;
 `
 
 const InlineSvg = styled.svg`
@@ -24,8 +24,8 @@ const InlineSvg = styled.svg`
   fill: currentColor;
 `
 
-export const Icon = ({ size = 32, children, a11yTitle, ...props }) => (
-  <SvgWrapper iconSize={size} className="icon" {...props}>
+export const Icon = ({ size = 32, children, a11yTitle, color, ...props }) => (
+  <SvgWrapper iconSize={size} className="icon" color={color} {...props}>
     <InlineSvg
       aria-label={a11yTitle}
       fillRule="evenodd"

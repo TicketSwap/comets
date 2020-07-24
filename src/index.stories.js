@@ -1,6 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import * as Icon from './'
+import styled from '@emotion/styled'
+
+const StyledAlert = styled(Icon.Alert)`
+  color: blue;
+`
 
 storiesOf('Comets', module).add('all', () => (
   <div
@@ -10,9 +15,9 @@ storiesOf('Comets', module).add('all', () => (
       gridTemplateColumns: 'repeat(auto-fill, 32px)',
     }}
   >
-    <Icon.Alert title="Alert" />
+    <StyledAlert title="Alert" />
     <Icon.AlertOff title="AlertOff" />
-    <Icon.Android title="Android" />
+    <Icon.Android title="Android" color="green" />
     <Icon.Apple title="Apple" />
     <Icon.ArrowDown title="ArrowDown" />
     <Icon.ArrowDownRounded title="ArrowDownRounded" />
@@ -24,7 +29,7 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.CalendarWeekend title="CalendarWeekend" />
     <Icon.Cart title="Cart" />
     <Icon.Chat title="Chat" />
-    <Icon.Checkmark title="Checkmark" />
+    <Icon.Checkmark title="Checkmark" color="lightgreen" />
     <Icon.CheckmarkRounded title="CheckmarkRounded" />
     <Icon.ChevronDown title="ChevronDown" />
     <Icon.ChevronDownAlt title="ChevronDownAlt" />
