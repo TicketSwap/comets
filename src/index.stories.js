@@ -7,6 +7,10 @@ const StyledAlert = styled(Icon.Alert)`
   color: blue;
 `
 
+const StyledAlertOff = styled(Icon.AlertOff)`
+  color: blue;
+`
+
 storiesOf('Comets', module).add('all', () => (
   <div
     style={{
@@ -15,8 +19,8 @@ storiesOf('Comets', module).add('all', () => (
       gridTemplateColumns: 'repeat(auto-fill, 32px)',
     }}
   >
-    <StyledAlert title="Alert" />
-    <Icon.AlertOff title="AlertOff" />
+    <StyledAlert title="Alert" color="red" />
+    <StyledAlertOff title="AlertOff" />
     <Icon.Android title="Android" color="green" />
     <Icon.Apple title="Apple" />
     <Icon.ArrowDown title="ArrowDown" />
