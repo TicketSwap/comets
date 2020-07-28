@@ -9,7 +9,12 @@ const SvgWrapper = styled.span`
   min-width: ${props => `${props.iconSize || 32}px`};
   min-height: ${props => `${props.iconSize || 32}px`};
   position: relative;
-  color: ${props => props.color} !important;
+
+  /*
+    Overwrite the color from a styled component if
+    there is a color prop supplied
+  */
+  color: ${({ color }) => (color ? `${color} !important` : 'inherit')};
 `
 
 const InlineSvg = styled.svg`
