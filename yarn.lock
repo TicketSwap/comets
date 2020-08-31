@@ -12059,9 +12059,9 @@ rollup-plugin-replace@^2.2.0:
     rollup-pluginutils "^2.6.0"
 
 rollup-plugin-visualizer@^4.0.1:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-visualizer/-/rollup-plugin-visualizer-4.0.4.tgz#69b9140c6faf46328997ed2d08b974252bf9d683"
-  integrity sha512-odkyLiVxCEXh4AWFSl75+pbIapzhEZkOVww8pKUgraOHicSH67MYMnAOHWQVK/BYeD1cCiF/0kk8/XNX2+LM9A==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-visualizer/-/rollup-plugin-visualizer-4.1.1.tgz#b8b18db0aa4b0e3b2af583399fa9d7e3f5a61808"
+  integrity sha512-aQBukhj8T+1BcOjD/5xB3+mZSSzHIVT+WpQDDEVpmPCkILVX0J7NPOuKEvKIXU+iZLvF7B5/wJA4+wxuH7FNew==
   dependencies:
     nanoid "^3.0.1"
     open "^7.0.3"
