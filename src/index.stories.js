@@ -61,6 +61,7 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.Eye title="Eye" />
     <Icon.Facebook title="Facebook" />
     <Icon.File title="File" />
+    <Icon.Flag title="Flag" />
     <Icon.Gear title="Gear" />
     <Icon.Github title="Github" />
     <Icon.Happy title="Happy" />
