@@ -24,8 +24,9 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.23"
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
+    "react": ">=16"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -34,15 +35,15 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.6.3",
-    "@emotion/core": "^10.0.35",
-    "@emotion/styled": "^10.0.23",
+    "@emotion/babel-plugin": "^11.0.0",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
     "@storybook/react": "^5.2.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
-    "babel-plugin-emotion": "^10.0.23",
     "commitizen": "^4.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.8.1",
