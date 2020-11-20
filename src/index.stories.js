@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import * as Icon from './'
 import styled from '@emotion/styled'
 
@@ -11,7 +10,7 @@ const StyledAlertOff = styled(Icon.AlertOff)`
   color: blue;
 `
 
-storiesOf('Comets', module).add('all', () => (
+export const Comets = () => (
   <div
     style={{
       display: 'grid',
@@ -126,4 +125,8 @@ storiesOf('Comets', module).add('all', () => (
     <Icon.WarningRounded title="WarningRounded" />
     <Icon.WhatsApp title="WhatsApp" />
   </div>
-))
+)
+
+export default {
+  title: 'Comets',
+}
