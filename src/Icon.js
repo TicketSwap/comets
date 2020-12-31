@@ -29,22 +29,26 @@ const InlineSvg = styled.svg`
   fill: currentColor;
 `
 
-export const Icon = ({ size = 32, children, a11yTitle, color, ...props }) => (
-  <SvgWrapper iconSize={size} className="icon" color={color} {...props}>
-    <InlineSvg
-      aria-label={a11yTitle}
-      fillRule="evenodd"
-      clipRule="evenodd"
-      strokeLinejoin="round"
-      strokeMiterlimit="1.414"
-      xmlns="http://www.w3.org/2000/svg"
-      role="presentation"
-      focusable="false"
-      viewBox="0 0 32 32"
-      preserveAspectRatio="xMidYMid meet"
-      fit
-    >
-      {children}
-    </InlineSvg>
-  </SvgWrapper>
-)
+export const Icon = ({ size = 32, children, a11yTitle, color, ...props }) => {
+  const isSmallIcon = size % 12 === 0 || size === 40
+
+  return (
+    <SvgWrapper iconSize={size} className="icon" color={color} {...props}>
+      <InlineSvg
+        aria-label={a11yTitle}
+        fillRule="evenodd"
+        clipRule="evenodd"
+        strokeLinejoin="round"
+        strokeMiterlimit="1.414"
+        xmlns="http://www.w3.org/2000/svg"
+        role="presentation"
+        focusable="false"
+        viewBox={isSmallIcon ? '0 0 24 24' : '0 0 32 32'}
+        preserveAspectRatio="xMidYMid meet"
+        fit
+      >
+        {children({ isSmallIcon })}
+      </InlineSvg>
+    </SvgWrapper>
+  )
+}
