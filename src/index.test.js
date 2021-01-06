@@ -1,10 +1,10 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { Download } from './Download'
+import { Cart } from './Cart'
 
 describe('Icon', () => {
   it('matches snapshot', () => {
-    const { container } = render(<Download />)
+    const { container } = render(<Cart />)
     expect(container.firstChild).toMatchSnapshot()
   })
 })

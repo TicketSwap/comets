@@ -74,7 +74,6 @@ export const Comets = () => {
         <Icon.CreditCard title="CreditCard" size={size} />
         <Icon.Dot title="Dot" size={size} />
         <Icon.Dots title="Dots" size={size} />
-        <Icon.Download title="Download" size={size} />
         <Icon.Entrance title="Entrance" size={size} />
         <Icon.Envelope title="Envelope" size={size} />
         <Icon.Error title="Error" size={size} />
