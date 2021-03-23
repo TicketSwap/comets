@@ -1,68 +1,66 @@
 {
   "name": "@ticketswap/comets",
   "version": "0.0.0-development",
-  "private": false,
-  "description": "",
+  "description": "Icon library for the TicketSwap product",
+  "main": "dist/comets.js",
+  "module": "dist/comets.es.js",
   "scripts": {
     "test": "jest",
     "commit": "git-cz",
-    "start": "rollup -c --watch",
+    "dev": "rollup -c --watch",
     "build": "rollup -c --environment NODE_ENV:production",
-    "prepublishOnly": "yarn build",
-    "lint": "eslint src",
-    "dev": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 6006",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md|mdx|graphql)\"",
     "format": "yarn prettier -- --write",
     "validate": "yarn test && yarn prettier -- --list-different",
     "semantic-release": "semantic-release"
   },
-  "repository": "https://github.com/TicketSwap/comets",
-  "main": "dist/comets.js",
-  "module": "dist/comets.es.js",
-  "files": [
-    "dist"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TicketSwap/comets.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "ticketswap"
   ],
   "license": "MIT",
-  "peerDependencies": {
-    "@emotion/react": "^11.1.1",
-    "@emotion/styled": "^11.0.0",
-    "react": ">=16"
+  "bugs": {
+    "url": "https://github.com/TicketSwap/comets/issues"
   },
+  "homepage": "https://github.com/TicketSwap/comets#readme",
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.6.3",
-    "@emotion/babel-plugin": "^11.0.0",
-    "@emotion/react": "^11.1.1",
-    "@emotion/styled": "^11.0.0",
-    "@storybook/react": "^6.1.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.4",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "commitizen": "^4.2.1",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "@emotion/core": "^10.0.22",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^10.0.23",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-replace": "^2.4.1",
+    "@storybook/react": "^6.1.21",
+    "@testing-library/react": "^11.2.5",
+    "babel-loader": "^8.2.2",
+    "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.8.1",
-    "eslint-config-prettier": "^7.1.0",
-    "jest": "^26.4.2",
-    "prettier": "^2.1.1",
-    "rollup": "^2.26.10",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-filesize": "^9.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-progress": "^1.1.1",
-    "rollup-plugin-replace": "^2.2.0",
-    "rollup-plugin-visualizer": "^4.1.1",
-    "rollup-watch": "^4.3.1",
-    "semantic-release": "^17.0.2"
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^2.42.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rollup-plugin-visualizer": "^4.2.2",
+    "semantic-release": "^17.4.2"
   },
-  "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+  "peerDependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }
