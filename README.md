@@ -7,11 +7,11 @@ A set of React.js icons used throughout the TicketSwap product. Powered by [Emot
 Using npm
 
 ```bash
-npm i @ticketswap/comets @emotion/core @emotion/styled
+npm i @ticketswap/comets @emotion/core @emotion/styled react react-dom
 ```
 
 Using yarn
 
 ```bash
-yarn add @ticketswap/comets @emotion/core @emotion/styled
+yarn add @ticketswap/comets @emotion/core @emotion/styled react react-dom
 ```

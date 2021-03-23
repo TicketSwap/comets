@@ -1,9 +1,8 @@
-import babel from 'rollup-plugin-babel'
-import filesize from 'rollup-plugin-filesize'
-import nodeResolve from 'rollup-plugin-node-resolve'
-import progress from 'rollup-plugin-progress'
+import { babel } from '@rollup/plugin-babel'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import replace from 'rollup-plugin-replace'
+import { uglify } from 'rollup-plugin-uglify'
+import replace from '@rollup/plugin-replace'
 import visualizer from 'rollup-plugin-visualizer'
 import pkg from './package.json'
 
@@ -20,20 +19,20 @@ export default {
     },
   ],
   plugins: [
+    replace({
+      preventAssignment: true,
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      __buildDate__: () => JSON.stringify(new Date()),
+      __buildVersion: 15,
+    }),
     peerDepsExternal(),
+    nodeResolve(),
     babel({
       exclude: 'node_modules/**',
+      babelHelpers: 'bundled',
+      presets: ['@babel/preset-env', '@babel/preset-react'],
     }),
-    progress(),
-    nodeResolve(),
-    replace({
-      'process.env.NODE_ENV': JSON.stringify(
-        process.env.NODE_ENV || 'development'
-      ),
-    }),
+    uglify(),
     visualizer(),
-    filesize(),
   ],
-  external: id =>
-    !id.startsWith('\0') && !id.startsWith('.') && !id.startsWith('/'),
 }
