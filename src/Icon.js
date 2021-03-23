@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from '@emotion/styled'
 
-const SvgWrapper = styled.span`
+export interface SvgWrapperProps {
+  iconSize?: number
+  color?: string
+}
+
+const SvgWrapper = styled.span<SvgWrapperProps>`
   display: inline-block;
   vertical-align: middle;
   width: ${props => `${props.iconSize || 32}px`};
@@ -29,7 +34,14 @@ const InlineSvg = styled.svg`
   fill: currentColor;
 `
 
-export const Icon = ({ size = 32, children, a11yTitle, color, ...props }) => (
+export interface IconProps {
+  size?: number,
+  children?: ReactNode,
+  a11yTitle: string,
+  color?: string,
+}
+
+export const Icon: React.FC<IconProps>  = ({ size = 32, children, a11yTitle, color, ...props }) => (
   <SvgWrapper iconSize={size} className="icon" color={color} {...props}>
     <InlineSvg
       aria-label={a11yTitle}
@@ -42,7 +54,6 @@ export const Icon = ({ size = 32, children, a11yTitle, color, ...props }) => (
       focusable="false"
       viewBox="0 0 32 32"
       preserveAspectRatio="xMidYMid meet"
-      fit
     >
       {children}
     </InlineSvg>
