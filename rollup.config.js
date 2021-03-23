@@ -6,6 +6,7 @@ import visualizer from 'rollup-plugin-visualizer'
 import filesize from 'rollup-plugin-filesize'
 import pkg from './package.json'
 import { terser } from 'rollup-plugin-terser'
+import typescript from '@rollup/plugin-typescript'
 
 export default {
   input: 'src/index.js',
@@ -33,6 +34,7 @@ export default {
       babelHelpers: 'bundled',
       presets: ['@babel/preset-env', '@babel/preset-react'],
     }),
+    typescript(),
     terser(),
     visualizer(),
     filesize(),
