@@ -35,13 +35,19 @@ const InlineSvg = styled.svg`
 `
 
 export interface IconProps {
-  size?: number,
-  children?: ReactNode,
-  a11yTitle: string,
-  color?: string,
+  size?: number
+  children?: ReactNode
+  a11yTitle: string
+  color?: string
 }
 
-export const Icon: React.FC<IconProps>  = ({ size = 32, children, a11yTitle, color, ...props }) => (
+export const Icon: React.FC<IconProps> = ({
+  size = 32,
+  children,
+  a11yTitle,
+  color,
+  ...props
+}) => (
   <SvgWrapper iconSize={size} className="icon" color={color} {...props}>
     <InlineSvg
       aria-label={a11yTitle}
