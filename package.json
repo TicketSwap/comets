@@ -13,6 +13,7 @@
     "dev": "rollup -c --watch",
     "build": "rollup -c --environment NODE_ENV:production",
     "storybook": "start-storybook -p 6006",
+    "prepublishOnly": "yarn build",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|scss|ts|tsx|md|mdx|graphql)\"",
     "format": "yarn prettier -- --write",
     "validate": "yarn test && yarn prettier -- --list-different",
