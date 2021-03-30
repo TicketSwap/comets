@@ -4,6 +4,9 @@
   "description": "Icon library for the TicketSwap product",
   "main": "dist/comets.js",
   "module": "dist/comets.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "commit": "git-cz",
