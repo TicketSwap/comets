@@ -47,6 +47,7 @@ export const Comets = () => (
     <Icon.Close title="Close" />
     <Icon.CloseAlt title="CloseAlt" />
     <Icon.CloseRounded title="CloseRounded" />
+    <Icon.Clover title="Clover" color="pink" />
     <Icon.Comment title="Comment" />
     <Icon.Copy title="Copy" />
     <Icon.CreditCard title="CreditCard" />
